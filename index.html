@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>計算機</title>
+    <script src="https://cdnout.com/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="./calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator_output">
+        <div data_previous_operand class="previous_operand"></div>
+        <div data_current_operand class="current_operand">0</div>
+      </div>
+      <div class="calculator_content">
+        <div class="calculator_item btn__primary">
+          <button data_all_clear>AC</button>
+          <button data_delete>DEL</button>
+          <button data_factorial>X!</button>
+          <button data_operation>÷</button>
+        </div>
+        <div class="calculator_item btn__primary">
+          <button data_num>7</button>
+          <button data_num>8</button>
+          <button data_num>9</button>
+          <button data_operation>*</button>
+        </div>
+        <div class="calculator_item btn__primary">
+          <button data_num>4</button>
+          <button data_num>5</button>
+          <button data_num>6</button>
+          <button data_operation>-</button>
+        </div>
+        <div class="calculator_item btn__primary">
+          <button data_num>1</button>
+          <button data_num>2</button>
+          <button data_num>3</button>
+          <button data_operation>+</button>
+        </div>
+        <div class="calculator_item btn__primary">
+          <button data_num>0</button>
+          <button data_num>00</button>
+          <button data_num>.</button>
+          <button data_equals>=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./noise.js"></script>
+    <script src="./explode.js"></script>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
