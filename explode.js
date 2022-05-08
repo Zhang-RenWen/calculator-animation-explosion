@@ -175,8 +175,20 @@ const loop = () => {
   frame++;
   rafId = requestAnimationFrame(loop);
 };
+function isMobile() {
+  try {
+    document.createEvent("TouchEvent");
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+if (isMobile()) {
+  canvas.addEventListener("mousedown", boom);
+} else {
+  canvas.addEventListener("touchstart", boom);
+}
 
-canvas.addEventListener("mousedown", boom);
 window.addEventListener("resize", setStage);
 
 canvas_parent.appendChild(canvas);
